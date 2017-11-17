@@ -1,0 +1,16 @@
+﻿{
+  "data": {
+
+  },
+  "name": "$Repo$_code",
+  "type": "$versioncontrol$",
+  "url": "https://$SrcAccname$.visualstudio.com/DefaultCollection/$project$/_git/$Repo$",
+  "authorization": {
+    "scheme": "UsernamePassword",
+    "parameters": {
+      "username": "$email$",
+      "password": "$token$"
+    }
+  },
+  "isReady": true
+}

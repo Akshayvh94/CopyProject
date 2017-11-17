@@ -1,0 +1,3 @@
+VSTS Copy Projetc-
+Creates project
+Migrate areas, iterations, work items, repos, source code

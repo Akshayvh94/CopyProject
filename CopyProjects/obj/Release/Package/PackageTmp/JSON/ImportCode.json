@@ -1,0 +1,9 @@
+﻿{
+  "parameters": {
+    "gitSource": {      
+      "url": "https://$SrcAccname$.visualstudio.com/DefaultCollection/$project$/_git/$Repo$"
+    },
+    "serviceEndpointId": "$endpointID$",
+    "deleteServiceEndpointAfterImportIsDone": true
+  }
+}

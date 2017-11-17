@@ -1,0 +1,166 @@
+﻿@model CopyProjects.Models.SuccErrorMsg
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <style>
+        .checkboxContainer {
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+        }
+
+        .chk {
+            margin-left: 10px;
+            width: 20px;
+            height: 15px;
+        }
+
+        .headerNew {
+            background-color: #2D3E52;
+            height: 60px;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            padding-top: 8px;
+            margin: 0px;
+        }
+
+        .navbar-inverse {
+            border-color: white;
+        }
+
+        .text {
+            margin-left: -8px;
+            margin-top: 12px;
+            font-family: 'Segoe UI';
+            font-size: 15px;
+            line-height: 170%;
+            text-align: justify;
+            font-weight: 500;
+        }
+    </style>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top headerNew">
+        <img src="~/Images/canarys-logo.png" style="height:50px; width:190px;" class="pull-left" />
+        <div class="col-sm-6" style="margin-left:0px; padding-left:320px;margin-top: 6px;">
+            VSTS Copy Project
+        </div>
+        <p class="col-sm-3" style="font-size:initial; margin-top:9px;  margin-left:125px; color:white;"><a href="../Account/Logout">Logout</a></p>
+
+    </div>
+    <div>
+        <div class="tab-pane active" role="tabpanel" id="step1">
+            <div id="sourecInputs">
+                <div class="" style="margin-left:-12px;">
+                    <div class="col-sm-3" style="margin-top: 18px;margin-left: 0px;padding-right: 0px;padding-left: 0px;width: 294px;">
+                        <a href="https://www.ecanarys.com/Products/Mobile-Apps/VSTS-on-Mobile">
+                            <img src="~/Images/VSTSmobile.gif" style="margin-top: 70px; height: 503px; margin-left: 25px;" />
+                        </a>
+
+                    </div>
+                    <div class="col-sm-7 text" style="margin-top:55px">
+                        @if (Model.successmsg.Count > 0)
+                        {
+
+                            <div id="loginbox" class="" style="margin-top:12px; margin-left:0px;">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <div class="panel-title"><b>Success Message</b></div>
+                                    </div>
+                                    <div style="padding-top:30px;padding-left: 120px;" class="panel-body">
+                                        @foreach (var msg in Model.successmsg)
+                                        {
+                                            <img src="~/Images/succimgs.jpg" style="width:10px; height:10px;" />
+                                            <label id="succ" style="color:green;font-weight:100;">@msg</label><br />
+                                        }
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.errormsg.Count > 0)
+                        {
+                            <div id="loginbox" class="" style="margin-top:12px; margin-left:0px;">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <div class="panel-title"><b>Error messages</b></div>
+                                    </div>
+                                    <div style="padding-top:30px;padding-left: 120px;" class="panel-body">
+                                        @foreach (var ermsg in Model.errormsg)
+                                        {
+                                            <img src="~/Images/error.png" style="width:10px; height:10px;" />
+                                            <label id="succ" style="color:red;font-weight:100;">@ermsg</label><br />
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        }
+
+
+                    </div>
+                    <div class="col-sm-2" style="margin-top: 65px; margin-left: -16px;">
+                        <a href="https://www.ecanarys.com/msdevops">
+                            <img src="~/Images/devop-migrate.png" />
+                        </a>
+                        <a href="https://www.ecanarys.com/msdevops">
+                            <img src="~/Images/Canarys01.png" style="height: 160px; width: 276px; padding-top: 5px;" />
+                        </a>
+                        <a href="https://www.ecanarys.com/msdevops">
+                            <img src="~/Images/devop-traing.png" style="padding-top: 5px;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-inline pull-right">
+                <li><button type="button" class="btn btn-primary next-step" id="nxtFirst" disabled="disabled" style="display:none;">Next</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
+<style type="text/css">
+    .rcorners2 {
+        border-radius: 5px;
+        border: 1px solid #d9edf7;
+        margin-left: 293px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .divhead {
+        background-color: #d9edf7;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: 0px;
+        padding-left: 15px;
+        height: 37px;
+    }
+
+    .font {
+        font-weight: 100
+    }
+
+    .container {
+        margin: 5px;
+    }
+
+    .navbar-default {
+        background-color: #2D3E52;
+        border-color: #e7e7e7;
+    }
+</style>
+

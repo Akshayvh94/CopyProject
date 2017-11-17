@@ -1,0 +1,101 @@
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\ApplicationInsights.config
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\CopyProjects.dll.config
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\CopyProjects.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\CopyProjects.pdb
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Antlr3.Runtime.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.Web.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.ApplicationInsights.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Newtonsoft.Json.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Helpers.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Mvc.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Optimization.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Razor.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.WebPages.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.WebPages.Razor.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\WebGrease.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Antlr3.Runtime.pdb
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.Web.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.ApplicationInsights.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\Newtonsoft.Json.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Helpers.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Mvc.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Optimization.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.Razor.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.WebPages.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\bin\System.Web.WebPages.Razor.xml
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\obj\Debug\CopyProjects.csproj.CoreCompileInputs.cache
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\obj\Debug\CopyProjects.dll
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\obj\Debug\CopyProjects.pdb
+C:\Users\AkshayH\documents\visual studio 2017\Projects\CopyProjects\CopyProjects\obj\Debug\CopyProjects.csprojResolveAssemblyReference.cache
+C:\Users\Bharathy\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.csprojResolveAssemblyReference.cache
+C:\Users\Bharathy\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.csproj.CoreCompileInputs.cache
+C:\Users\Bharathy\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.dll
+C:\Users\Bharathy\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.pdb
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\ApplicationInsights.config
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\CopyProjects.dll.config
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\CopyProjects.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\CopyProjects.pdb
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Antlr3.Runtime.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.Web.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.ApplicationInsights.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Newtonsoft.Json.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Net.Http.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Helpers.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Mvc.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Optimization.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Razor.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.WebPages.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.WebPages.Razor.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\WebGrease.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Antlr3.Runtime.pdb
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.Web.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.ApplicationInsights.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\Newtonsoft.Json.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Helpers.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Mvc.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Optimization.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.Razor.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.WebPages.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\bin\System.Web.WebPages.Razor.xml
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.csprojResolveAssemblyReference.cache
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.csproj.CoreCompileInputs.cache
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.dll
+C:\Users\AkshayH\Source\Repos\CopyProjects\CopyProjects\obj\Debug\CopyProjects.pdb

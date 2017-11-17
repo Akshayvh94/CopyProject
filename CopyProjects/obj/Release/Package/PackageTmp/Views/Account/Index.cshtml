@@ -1,0 +1,314 @@
+﻿<html>
+<head>
+    <style>
+        .checkboxContainer {
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+        }
+
+        .chk {
+            margin-left: 10px;
+            width: 20px;
+            height: 15px;
+        }
+
+        .headerNew {
+            background-color: #2D3E52;
+            height: 60px;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            padding-top: 8px;
+            margin: 0px;
+        }
+
+        .navbar-inverse {
+            border-color: white;
+        }
+
+        .text {
+            margin-left: -8px;
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 170%;
+            text-align: justify;
+            font-weight: 500;
+        }
+    </style>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function i(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = "AuthenticatedUserContext", h = "start", c = "stop", l = "Track", a = l + "Event", v = l + "Page", y = u.createElement(o), r, f; y.src = config.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js"; u.getElementsByTagName(o)[0].parentNode.appendChild(y); try { t.cookie = u.cookie } catch (p) { } for (t.queue = [], t.version = "1.0", r = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; r.length;)i("track" + r.pop()); return i("set" + s), i("clear" + s), i(h + a), i(c + a), i(h + v), i(c + v), i("flush"), config.disableExceptionTracking || (r = "onerror", i("_" + r), f = e[r], e[r] = function (config, i, u, e, o) { var s = f && f(config, i, u, e, o); return s !== !0 && t["_" + r](config, i, u, e, o), s }), t
+        }({
+            instrumentationKey: "5210d19c-39a2-4359-acf2-5726c7169571"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+
+<body>
+    <a href="" target="_blank"></a>
+    <div class="navbar navbar-default navbar-fixed-top headerNew">
+        <img src="~/Images/canarys-logo.png" style="height:50px; width:190px;" class="pull-left" />
+        <div class="col-sm-6" style="margin-left:0px; padding-left:320px;margin-top: 6px;">
+            VSTS Copy Project
+        </div>
+
+    </div>
+    <div>
+        <div class="tab-pane active" role="tabpanel" id="step1">
+            <div id="sourecInputs">
+                <div class="" style="margin-left:-12px;">
+                    <div class="col-sm-3" style="margin-top: 18px;margin-left: 0px;padding-right: 0px;padding-left: 0px;width: 294px;">
+                        <a href="https://www.ecanarys.com/Products/Mobile-Apps/VSTS-on-Mobile" target="_blank">
+                            <img src="~/Images/VSTSmobile.gif" style="margin-top: -15px;height: 540px;" />
+                        </a>
+
+                    </div>
+                    <div class="col-sm-7 text">
+
+                        <div id="loginbox" class="" style="margin-top:12px; margin-left:0px;">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <div class="panel-title"><b>Account verification</b></div>
+                                </div>
+                                <div style="padding-top:30px;padding-left: 120px;" class="panel-body">
+                                    <div style="display:none" id="msgSource" class="alert alert-danger col-sm-12"></div>
+
+                                    <a href="@Url.Action("Verify", "Account")" style="text-decoration: none;margin-left:108px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="50px" viewBox="0 0 3278 522" class="SignInButton">
+                                        <style type="text/css">
+                                            .fil0:hover {
+                                                fill: #4B4B4B;
+                                            }
+
+                                            .fnt0 {
+                                                font-size: 170px;
+                                                font-family: 'Segoe UI Semibold', 'Segoe UI';
+                                                text-decoration: none;
+                                            }
+</style>
+                                        <rect class="fil0" x="2" y="2" width="3174" height="517" fill="black" />
+
+
+
+
+
+
+
+
+
+
+                                            
+                                        <rect x="150" y="129" width="122" height="122" fill="#F35325" />
+
+
+
+
+
+
+
+
+
+
+
+                                        <rect x="284" y="129" width="122" height="122" fill="#81BC06" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <rect x="150" y="263" width="122" height="122" fill="#05A6F0" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+                                        <rect x="284" y="263" width="122" height="122" fill="#FFBA08" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+                                        <text x="470" y="357" fill="white" class="fnt0">Sign in with your VSTS Credentials</text>
+        </svg>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <br />
+                        </div>
+                        <div>
+                            <p>In current version we have come up with :</p>
+                            <ul>
+                                <li>Creating new Team Project</li>
+                                <li>Creating Teams</li>
+                                <li>Creating Default Iterations</li>
+                                <li>Importing Source Code from source project</li>
+                                <li>Importing Work Items from source project</li>
+                                <li>Tool can migrate up to 100 work items and 1 repository.</li>
+                                <li>Please Contact us <a href="mailto:vststoolssupport@ecanarys.com">vststoolssupport@ecanarys.com</a></li>
+                            </ul>
+                            <p>
+                                Note:
+                                <ul>
+                                    <li>Please verify that you have sufficient access to create Team Project in Target Account.</li>
+                                    <li>Copy Project works for VSTS-GIT Repository only, not for TFVC.</li>
+                                    <li>Not migrating work items attachments.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div>
+                            <br />
+                        </div>
+                        <div>
+                            <br />
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2" style="margin-top: 5px; margin-left: -16px;">
+                        <a href="https://www.ecanarys.com/msdevops" target="_blank">
+                            <img src="~/Images/devop-migrate.png" />
+                        </a>
+                        <a href="https://www.ecanarys.com/msdevops" target="_blank">
+                            <img src="~/Images/Canarys01.png" style="height: 160px; width: 276px; padding-top: 5px;" />
+                        </a>
+                        <a href="https://www.ecanarys.com/msdevops" target="_blank">
+                            <img src="~/Images/devop-traing.png" style="padding-top: 5px;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-inline pull-right">
+                <li><button type="button" class="btn btn-primary next-step" id="nxtFirst" disabled="disabled" style="display:none;">Next</button></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
+<style type="text/css">
+    .rcorners2 {
+        border-radius: 5px;
+        border: 1px solid #d9edf7;
+        margin-left: 293px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .divhead {
+        background-color: #d9edf7;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: 0px;
+        padding-left: 15px;
+        height: 37px;
+    }
+
+    .font {
+        font-weight: 100
+    }
+
+    .container {
+        margin: 5px;
+    }
+</style>
+<script type="text/javascript">
+    //$(document).ready(function () {
+    //    $('#hintModal').modal({ show: true });
+    //    $('#btnInterest').click(function () {
+    //        var a = $('.modeSelect').val();
+    //        console.log(a);
+    //    });
+    //});
+    $("#verfySource").click(function () {
+        var sourceAccount = $("#sourceAccount").val();
+        var sourcePAT = $("#sourcePAT").val();
+
+        if (sourceAccount == '') { $("#msgSource").text("please enter account name"); $("#msgSource").show(); $("#sourceAccount").focus(); return false; }
+        if (sourcePAT == '') { $("#msgSource").text("please enter personal access token"); $("#msgSource").show(); $("#sourcePAT").focus(); return false; }
+
+        var Url = '@Url.Action("verifyAccount", "Home")';
+        $.get(Url, { "accountName": sourceAccount, "PAT": sourcePAT }, function (response) {
+
+            if (response.message) {
+
+                $("#msgSource").text("Account name and PAT succesfully verified"); $("#msgSource").show();
+                $("#loader").show();
+                $("#verfySource").attr('disabled', 'disabled');
+                $("#Dashboardform").submit();
+                $("#sourceAccount").prop('disabled', true);
+                $("#sourcePAT").prop('disabled', true);
+                return false;
+            }
+            else {
+
+                $("#msgSource").text("invalid account name or PAT");
+                $("#sourcePAT").focus();
+                $("#msgSource").show();
+                $("#nxtFirst").attr('disabled', 'disabled');
+                return false;
+            }
+        });
+    });
+
+</script>
+
+

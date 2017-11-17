@@ -1,0 +1,14 @@
+﻿@model CopyProjects.Models.AccessDetails
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Access Token</h2>
+<h5>Acccess Token: @Model.access_token</h5><br />
+<h5>Expires in: @Model.expires_in</h5><br />
+<h5>refresh_token: @Model.refresh_token</h5><br />
+<h5>Token Type: @Model.token_type</h5><br />
+
+
+
+<input type="hidden" value="@Model.access_token" id="access" />

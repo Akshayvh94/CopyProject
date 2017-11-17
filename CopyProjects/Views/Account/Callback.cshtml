@@ -1,0 +1,286 @@
+﻿@model CopyProjects.Models.Dashboard
+<html>
+<head>
+
+    <style>
+        .checkboxContainer {
+            width: 100%;
+            background-color: darkgrey;
+            text-align: center;
+        }
+
+        .chk {
+            margin-left: 10px;
+            width: 20px;
+            height: 15px;
+        }
+
+        .headerNew {
+            background-color: #2D3E52;
+            height: 60px;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            padding-top: 8px;
+            margin: 0px;
+        }
+
+        .rcorners2 {
+            border-radius: 5px;
+            border: 1px solid #d9edf7;
+            margin-left: 293px;
+            padding-right: 0px;
+            padding-left: 0px;
+            width: 525px;
+        }
+
+        .divhead {
+            background-color: #d9edf7;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-top: 0px;
+            padding-left: 15px;
+            height: 37px;
+        }
+
+        .font {
+            font-weight: 100
+        }
+
+        .navbar-inverse {
+            border-color: white;
+        }
+
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
+
+            #snackbar.show {
+                visibility: visible;
+                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            }
+    </style>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/custome-style.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/AppScript/Validates.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top headerNew">
+        <img src="~/Images/canarys-logo.png" style="height:50px; width:190px;" class="pull-left" />
+        <div class="col-sm-6" style="margin-left:0px; padding-left:320px;margin-top: 6px;">
+            VSTS Copy Project
+        </div>
+        <p class="col-sm-3" style="font-size:initial; margin-top:9px;  margin-left:125px; color:white;"><a href="../Account/Logout">Logout</a></p>
+    </div>
+    <div class="container" style="width:100%;">
+
+        <div class="wizard">
+            <input type="hidden" id="uid" />
+
+            @Html.HiddenFor(x => x.accessToken, new { @id = "hidaccessToken" })
+            @Html.HiddenFor(x => x.SelectedID, new { @id = "selectedAcc" })
+            @Html.HiddenFor(x => x.SrcProjectName, new { @id = "srcProjectName" })
+            @Html.HiddenFor(x => x.refreshToken, new { @id = "hidrefreshToken" })
+            @Html.HiddenFor(x => x.accountsForDdl, new { @id = "hidaccountsForDdl" })
+            @Html.HiddenFor(x => x.hasAccount, new { @id = "hidhasAccount" })
+            @Html.HiddenFor(model => model.accessToken)
+            @Html.HiddenFor(model => model.accountName)
+            @Html.HiddenFor(model => model.refreshToken)
+            @Html.HiddenFor(model => model.Name, new { @id="displayname"})
+
+            @Html.HiddenFor(model => model.Email, new { @id = "useremail" })
+
+            <div>
+                <div class="col-sm-3">
+
+                    <a href="https://www.ecanarys.com/Products/Mobile-Apps/VSTS-on-Mobile" target="_blank">
+                        <img src="~/Images/VSTSmobile.gif" style="margin-left: -17px;margin-top: 58px;height: 520px;" class="siteVisitor" />
+                    </a>
+                </div>
+                <div id="loginbox" class="mainbox col-sm-6" style="margin-top:20px; margin-left:0px">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title"><b>Account and Project Selection</b></div>
+                        </div>
+                        <div style="padding-top:30px" class="panel-body">
+                            @if (Model.hasAccount)
+                            {
+                                <div style="display:none" id="msgSource" class="alert alert-danger col-sm-12">
+                                    <button id="close" class="close" aria-label="Close" type="button" data-dismiss="modal">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <label id="msg"></label>
+                                </div>
+
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <div class="col-sm-6 control-label" style="width:30%;">Source Account:</div>
+                                        <div class="col-sm-6" style="width:70%;">
+                                            @Html.DropDownListFor(model => model.accountName, new SelectList(Model.accountsForDdl), "--select account--", new { @class = "form-control", id = "ddlAcccountName" })
+
+                                        </div>
+                                        <img src="~/Images/loader.gif" style="width:30px; margin-left: -110px; visibility:hidden" id="projectloader" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-6 control-label" style="width:30%;">Source project:</div>
+                                        <div class="col-sm-6" style="width:70%;">
+                                            <select class="form-control" id="projectSelect">
+                                                <option value="0">--Select Project--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-6 control-label" style="width:30%;">Target Account:</div>
+                                        <div class="col-sm-6" style="width:70%;">
+                                            @Html.DropDownListFor(model => model.TargetAccountName, new SelectList(Model.accountsForDdl), "--select account--", new { @class = "form-control", id = "TargetAcccountName" })
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-6 control-label" style="width:30%;">New Project Name:</div>
+                                        <div class="col-sm-6" style="width:70%;">
+                                            @Html.TextBoxFor(model => model.NewProjectName, new { @class = "form-control", @id = "NewProjectName" })
+
+                                        </div>
+                                    </div>
+                                    <div class="input-group pull-right">
+                                        <button type="button" class="btn btn-primary " id="submitForm" @*style="margin-left: 420px;"*@>Copy Project</button>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="alert alert-danger col-sm-12">Either the VSTS account does not exist or the tool has not been authorised to access VSTS account </div>
+                                <input type="button" style="float:right;" id="btnLogout" class="btn btn-info" value="Go Back" onclick="location.href='@Url.Action("Logout", "Account")'" />
+                            }
+                        </div>
+                    </div>
+                    <div id="loader" style="display:none;margin-left:130px;">
+                        <b>we are processing your request, please wait..</b>
+                        <img src="~/Images/loader.gif" style="width:30px;" />
+                    </div>
+                    <div class="form-group">
+                        <div id="accountLink"></div>
+                        <div class="meter red" id="dvProgress" style="display:none;">
+                            <span style="width: 0%;" id="progressBar"></span>
+                            <div><b>Your project is being created…. Hang on!</b></div>
+                        </div>
+                    </div>
+                    <div id="statusmessages" style="display: none; font-size: 11px; padding: 5px; line-height: 170%; text-align: justify;">
+                        <button id="closeStatus" class="close" aria-label="Close" type="button" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div id="errrListDiv" style="display: none; font-size: 11px; padding: 5px; line-height: 170%; text-align: justify;">
+                        <button id="closeErrList" class="close" aria-label="Close" type="button" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div><br /></div>
+                    <div><br /></div>
+
+                    <div><br /></div>
+
+                    <div><br /></div>
+                    <div><br /></div>
+
+                    <div><br /></div>
+
+                    <div><br /></div>
+
+                    <div><br /></div>
+
+                    <div><br /></div>
+
+
+                </div>
+                <div class="col-sm-3" style="margin-left: -13px; margin-top:12px;padding-left: 50px;">
+                    <div>
+                        <a href="https://www.ecanarys.com/msdevops" target="_blank">
+
+                            <img src="~/Images/devop-traing.png" class="siteVisitor" />
+                        </a>
+                    </div>
+                    <div style="margin-top:2px;">
+                        <a href="https://www.ecanarys.com/msdevops" target="_blank">
+                            <img src="~/Images/Canarys01.png" style="height: 156px; width: 275px; padding-top: 5px;" class="siteVisitor" />
+                        </a>
+                    </div>
+                    <div style="margin-top: 2px">
+                        <a href="https://www.ecanarys.com/msdevops" target="_blank">
+                            <img src="~/Images/devop-migrate.png" style="padding-top: 5px;" class="siteVisitor" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="modal fade" id="modalmail" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #2D3E52;color: white;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Request for Access</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tool can migrate upto 100 work items and 1 repository. Send a mail to admin, requesting for access to migrate more that 100 work items or more than 1 repository.</p>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" id="Custname" class="form-control redC" />
+                        </div>
+                        <div class="form-group">
+                            <label>Email ID</label>
+                            <input type="text" id="emailid" class="form-control redC" />
+                            <i id="emailerror" style="color:red"></i>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary btn-sm" id="sendmailbtn"> Send </button>
+                            <div id="mailloader" style="margin-top: 0px; visibility:hidden;">
+                                <b>Sending mail to admin, please wait..</b>
+                                <img src="~/Images/loader.gif" style="width:30px;" />
+                            </div>
+                        </div>
+
+                        <div id="snackbar">Mail has been sent.</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var uniqueId = '@Guid.NewGuid().ToString()';
+    $('#uid').val(uniqueId);
+</script>
